@@ -10,6 +10,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 public class ConfigServerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ConfigServerApplication.class, args);
+		// see also https://github.com/adrhc/spring-cloud-config/blob/main/spring-cloud-config-server/src/main/java/org/springframework/cloud/config/server/ConfigServerApplication.java
 //		new SpringApplicationBuilder(ConfigServerApplication.class).properties("spring.config.name:configserver").run(args);
 	}
 }
