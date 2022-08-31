@@ -2,7 +2,8 @@
 # see also https://github.com/spring-cloud-samples/configserver
 
 info:
-  component: Config Server
+  # see http://127.0.0.1:8888/admin/info
+  component: Config Server (application.yml)
 spring:
   application:
     name: configserver
@@ -20,6 +21,8 @@ spring:
               uri: https://github.com/spring-cloud-samples/config-repo
 
 server:
+  # configserver.yml is not used but would be used if
+  # spring.config.name=configserver (see ConfigServerApplication)
   port: 8888
 management:
   endpoints:
